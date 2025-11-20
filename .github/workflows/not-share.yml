@@ -1,0 +1,8 @@
+name: Missing share data
+on: push
+jobs:
+ share:
+  runs-on: latest-ubuntu
+  steps:
+   - run: export RESULT="hello"
+   - run: echo "${RESULT}"
